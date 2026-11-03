@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Party Detective</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="fallback.css">
+</head>
+<body>
+  <header class="hero">
+    <div><p class="eyebrow">WEB DEVELOPMENT · ASSIGNMENT 6</p><h1>The Party Detective</h1><p>Explore the house, question the clues, and set the party in motion.</p></div>
+    <div class="hero-note"><span>THE CASE</span><strong>21:30</strong><small>The cake disappeared</small></div>
+  </header>
+  <main>
+    <section class="toolbar" aria-label="Party controls">
+      <div><button id="clear-spotlight" class="button button-light">Clear spotlight</button><button id="reset-party" class="button button-light">Reset party</button></div>
+      <p id="status" aria-live="polite">Choose a case or select a guest.</p>
+    </section>
+    <section id="house" class="house" aria-label="Party house"></section>
+    <section class="case-panel">
+      <div class="section-heading"><div><p class="eyebrow">TASK 1</p><h2>Selector Detective</h2></div><p>Each case rebuilds the original scene first. Results are found from the cards in the page.</p></div>
+      <div id="case-list" class="case-list"></div>
+      <div id="case-result" class="case-result" aria-live="polite">Run a case to see its result.</div>
+    </section>
+    <section class="legend"><strong>Clue key</strong><span>📱 Phone</span><span>👓 Glasses</span><span>👜 Bag</span><span>☕ Cup</span><span>🍰 Crumbs</span><span>✦ AITU student</span></section>
+  </main>
+  <div id="guest-popover" class="guest-popover" aria-hidden="true"></div>
+  <script src="jquery-3.7.1.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
